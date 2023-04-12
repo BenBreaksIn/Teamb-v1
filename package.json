@@ -1,0 +1,23 @@
+{
+    "name": "streamer-status",
+    "version": "1.0.0",
+    "description": "A simple web app to display the status of streamers",
+    "main": "/src/index.html",
+    "scripts": {
+      "start:frontend": "parcel src/index.html",
+      "start:backend": "node src/backend.js",
+      "start": "concurrently \"npm run start:frontend\" \"npm run start:backend\""
+    },
+    "dependencies": {
+      "express": "*",
+      "node-fetch": "*",
+      "concurrently": "*"
+    },
+    "devDependencies": {
+      "parcel-bundler": "*"
+    },
+    "keywords": ["streamers", "status"],
+    "author": "Your Name",
+    "license": "ISC"
+  }
+  
